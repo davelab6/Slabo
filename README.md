@@ -17,4 +17,8 @@ The FontLab Sources folder contains not only the `.vfb` files for the size-speci
 
 The Support Files folder contains a `.ods` format spreadsheet that documents the initial Slabo glyph set. This set covers a superset of the Windows 1252 (Latin 1), 1250 (Eastern Europe), 1254 (Turkish), and 1257 (Baltic) codepages, as well as most of the Mac Roman charset (initial release is missing some generic symbol characters). The other files in that folder are `.enc`, `.nam` and `.ren` files for glyph set management in FontLab Studio.
 
+#### Why not offer Slabo as a Variable Font?
+
+It's complicated by the fact that each of the optical size designs has a different UPM in order to facilitate precise pixel gridfitting. For a variable font, we'd need to scale to a common UPM, which would remove what I think of as the 'crispness dividend' that comes from the gridfitting. At that point, we might as well create something new.
+
 — John Hudson
